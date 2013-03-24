@@ -3,6 +3,7 @@ var AWS=require('aws-sdk');
 AWS.config.loadFromPath('../credentials/credentials.json');
 AWS.config.update({region:'us-east-1'});
 
+
 var DynDB=new AWS.DynamoDB();
 DynDB.client.putItem({TableName:'Traffic',
 Item:{
